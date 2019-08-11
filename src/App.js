@@ -47,7 +47,8 @@ class App extends Component {
             <TechSpecsContainer
               selected={this.state.selected}
               features={this.props.features}
-              updatedSelected={feature=>this.updateFeature(feature)}
+              // updatedSelected={feature=>this.updateFeature(feature)}
+              updateFeature={this.updateFeature}
               />
           </section>
           <section className="main__summary">

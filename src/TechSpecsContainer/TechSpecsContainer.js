@@ -12,7 +12,8 @@ class TechSpecsContainer extends Component {
                 <Parts 
                 selected={this.props.selected}
                 features={this.props.features}
-                updatedSelected={feature=>this.updateFeature(feature)}
+                // updatedSelected={feature=>this.props.updateFeature(feature)}
+                updateFeature={this.props.updateFeature}
                 />
             </div>
         )
