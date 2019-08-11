@@ -48,7 +48,7 @@ class App extends Component {
               selected={this.state.selected}
               features={this.props.features}
               // updatedSelected={feature=>this.updateFeature(feature)}
-              updateFeature={this.updateFeature}
+              updateFeature={this.updateFeature=this.updateFeature.bind(this)}
               />
           </section>
           <section className="main__summary">
